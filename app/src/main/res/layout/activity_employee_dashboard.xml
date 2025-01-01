@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <!-- Task List -->
+    <TextView
+        android:id="@+id/tvAssignedTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task List"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <!-- Personal Statistics -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Statistics"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tvCompletedTasks"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Completed Tasks: 0"
+          android:layout_marginTop="8dp" />
+
+      <TextView
+          android:id="@+id/tvProgressRate"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Progress Rate: 0%"
+          android:layout_marginTop="8dp" />
+
+      <TextView
+          android:id="@+id/tvRemainingTime"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Remaining Time for Open Tasks: 0 days"
+          android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Notifications -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+  </LinearLayout>
+</ScrollView>
